@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "bignumber.js": "^9.0.1",
     "env-cmd": "^10.1.0",
     "ethers": "^5.0.31",
     "mongoose": "^5.11.17"
