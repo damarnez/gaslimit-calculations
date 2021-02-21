@@ -54,7 +54,6 @@ const N_SEGMENTS = 4;
   for await (let name of STORE_FUNCTIONS) {
     await generateCalculations(name);
   }
-
-
-
+  // Close 
+  mongoose.connection.close();
 })();
