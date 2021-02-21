@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "populate": "env-cmd node ./src/populatedb.js"
+    "populate": "env-cmd node ./src/populatedb.js",
+    "calculations": "env-cmd node ./src/calculations.js"
   },
   "author": "damarnez",
   "license": "ISC",
