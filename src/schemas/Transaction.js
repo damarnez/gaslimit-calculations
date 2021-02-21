@@ -7,7 +7,7 @@ const transactionSchema = new Schema({
   gasLimit: Number,
   gasPrice: String,
   asset: String,
-  amount: Number,
+  amount: String,
   blockNumber: Number
 
 });

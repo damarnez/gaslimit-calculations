@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const mongoose = require('mongoose');
 const Transaction = require('./schemas/Transaction');
-const { nextTick } = require('process');
+
 mongoose.connect('mongodb://localhost:27017/transactions', { useNewUrlParser: true });
 
 const LENDING_POOL_MAINNET = "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9"
@@ -12,6 +12,7 @@ const STORE_FUNCTIONS = ['deposit', 'withdraw', 'borrow', 'repay']
 const BLOCK_CREATION = 11361678;
 const BLOCK_NOW = 11896212;
 const GRUP_BLOCK = 1000;
+
 const N_ITERATIONS = Math.round((BLOCK_NOW - BLOCK_CREATION) / GRUP_BLOCK);
 console.log('IT: ', N_ITERATIONS)
 
