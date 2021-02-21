@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "populate": "env-cmd node populatedb.js"
+    "populate": "env-cmd node ./src/populatedb.js"
   },
   "author": "damarnez",
   "license": "ISC",
